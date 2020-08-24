@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--This Tag describe what version of HTLM we are working on.Here we are working on HTLM 5-->
+<!--The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.-->
+
+<html lang="en" dir="ltr">
+<!--Will tell the browser how to handle the code, in that case, HTLM -->
+<!--The first attribute defines the language, here english -->
+<!--The second attribute defines the direction of the text, here "left to right" -->
+
+<head>
+  <!--Head part is the part holding the info about the webpage -->
+  <meta charset="utf-8" name="description" content="The basics of HTLM.">
+  <!--Meta data gives extra information. Must be included within the "head" section.-->
+  <!--Charset dictates the encoding of characters set used. Here, utf-8 is the one used for most known characters.-->
+  <!--The description Meta data will allows the following content to be displayed on the browser, as description, under the title of the webpage-->
+  <!--Metadata will not be displayed on the page, but is machine parsable. Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.-->
+  <!--All Meta codes must follow each others. There should not be anything, comments included, between them.-->
+  <!--Here we could have also separated each of them in three lines all starting by "meta". As long as all the different attributes contain within individuals "Meta" follow each other, we are good-->
+
+  <title>Rudy Website</title>
+  <!-- the text included in these tags will be displayed on the internet Tab-->
+
+</head>
+
+<body>
+  <!--This is where the displayed content will be coded-->
+
+  <table cellspacing="10">
+    <tr>
+      <td>
+        <img src="images/rudy le bris.png" alt="Rudy profile picture" width="200" height="200">
+
+        <!--We add here a picture, taken from our local files. Careful as the complete name including the extension of the file must be name-->
+        <!--The attribute "Alt" allows to display something alternative if the picture can not be displayed-->
+        <!-- To modify the picture, we have added two other attributes, namely "width" and "height". There are of courses other way to do that, namely with CSS-->
+
+      </td>
+
+      <td>
+        <h1><strong>Rudy LE BRIS</strong></h1>
+
+        <p><em>French-English bilingual Financial Analyst looking for <strong>new opportunities.</strong></em></p>
+        <!--Text entered as "paragraph" while being italized and bold-->
+        <!--The difference between "em" and "i" is that "em" is more thqn just style, it makes it important rather than just stylized-->
+        <!--Same goes between "strong" and "b"-->
+
+        <p align="justify">
+          <!--We want here to have the text justified as for presentation. Here we are not using CSS to do that, just pure HTML-->
+          Graduated in Finance and then in Law from France and the U.K., I have worked both in France and in
+          Belgium for several international insurance companies. I have very recently left my position of
+          Reinsurance Analyst and moved to Innsbruck to join my partner and start a new life in this region I am
+          already familiar with. Looking for new challenges, I have also started Web development courses.
+        </p>
+
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h3><strong>Education</strong></h3>
+
+  <ul>
+    <!--Unorganized list, for bullet point lists-->
+    <li><strong>Masters Of Law </strong><em>- Nantes University</em></li>
+    <!--For each bullet point, use the tags "<li>...</li>"-->
+    <ul>
+      <!--Using another "<UL>...</UL>" tag within another "<UL>...</UL>" allows
+    you to create nested bullet point lists-->
+      <li>Civil Liabilities</li>
+      <li>Insurances</li>
+    </ul>
+    <br>
+    <li><strong>Masters of Law</strong><em>- Cardiff University</em></li>
+    <ul>
+      <li>Competition Laws</li>
+      <li>Maritime Insurance</li>
+      <li>Maritime Laws</li>
+    </ul>
+    <br>
+    <li><strong>Bachelor in Management</strong><em>- Nantes University</em></li>
+    <ul>
+      <li>Finance & Accountancy</li>
+      <li>IT</li>
+    </ul>
+  </ul>
+
+  <hr>
+
+  <h3><strong>Hobbies</strong></h3>
+  <!-- What we want here is an organized list-->
+  <ol type="1" start="1">
+    <!--Just like before, every item listed will have the tag "<li>...</li>"-->
+    <!--Here we also dictate how the list is going to look like. By default, the
+  listing will be done with number (1.2.3.etc.) but for clarity in the code,
+  we will here mention the type of Organized list-->
+    <!--We can also (not mandatory) add an attribute dictating whether the list
+  should start at a particular number-->
+    <!--We will also add a breaking line between items for more clarity-->
+    <li><a href="hobbies.HTML">Science-Fiction litterature</a></li>
+    <!--here the reference used is another HTML file, located in the same folder, same level, as the main index html file-->
+    <br>
+    <li><a href="https://en.wikipedia.org/wiki/Hiking">Outdoor sport</a></li>
+    <br>
+    <li><a href="https://en.wikipedia.org/wiki/Language">Language learning</a></li>
+    <br>
+    <li><a href="https://en.wikipedia.org/wiki/Whisky">Whisky</a></li>
+  </ol>
+
+  <hr>
+  <!--Finance/Reinsurance/laws/english/french/analytical skills-->
+
+  <h3><strong>Skills</strong></h3>
+
+  <table border="3" cellspacing="1">
+    <!--We have here three tables in total. Within one big table, we will have two smaller tables, on the left, one on the righ-->
+    <!--This will be a nested table-->
+    <!--This big table will have only one "TR", with two "TD".-->
+    <!--Each of these "TD" will have a "Table" within-->
+    <!--Within each of these sub-table, we will have as many "TR" as we want to put skills-->
+    <!--For each line of these two sub-tables, we will have a "TD" for the name of the skill, and another "TD" for the level-->
+    <!--the border will apply to the big table, and also for each of the "TD" of this very same big table.-->
+    <!--As each of its "TD" will be a sub-table, these two sub-tables will have borders too-->
+    <!--The border will apply to the big table itself (around it) but also we
+    will have a border between the two "TD" of this big table, so a borders
+    between each of the sub-tables-->
+    <tr>
+      <td>
+        <table cellspacing="5">
+          <tr>
+            <td>Finance</td>
+            <td>&#9673;&#9673;&#9673;&#9673;&#9673;</td>
+          </tr>
+          <tr>
+            <td>Reinsurance</td>
+            <td>&#9673;&#9673;&#9673;&#9673;&#9673;</td>
+          </tr>
+          <tr>
+            <td>Laws</td>
+            <td>&#9673;&#9673;&#9673;&#9673;&#9673;</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table cellspacing="5">
+          <tr>
+            <td>Finance</td>
+            <td>&#9673;&#9673;&#9673;&#9673;&#9673;</td>
+          </tr>
+          <tr>
+            <td>Reinsurance</td>
+            <td>&#9673;&#9673;&#9673;&#9673;&#9673;</td>
+          <tr>
+            <td>Laws</td>
+            <td>&#9673;&#9673;&#9673;&#9673;&#9673;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+
+  <hr>
+
+  <h3>Professional Experiences</h3>
+
+<table cellspacing="10">
+
+  <thead>
+    <tr>
+      <th align="left">Year</th>
+      <th align="left">COMPANY</th>
+      <th align="left">POSITION</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td>JAN 2018</td>
+            <td>-</td>
+            <td>JUNE 2020</td>
+          </tr>
+        </table>
+      <td>AIG GRO</td>
+      <td>Reinsurance Analyst</td>
+    </tr>
+
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td>APR 2017</td>
+            <td>-</td>
+            <td>DEC 2018</td>
+          </tr>
+        </table>
+      </td>
+      <td>TOURING ASSURANCE</td>
+      <td>Policy Processing Clerk</td>
+    </tr>
+
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td>MAR 2016</td>
+            <td>-</td>
+            <td>AUG 2016</td>
+          </tr>
+        </table>
+      </td>
+      <td>AXA FRANCE</td>
+      <td>Policy Processing Clerk</td>
+    </tr>
+
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td>NOV 2015</td>
+            <td>-</td>
+            <td>FEB 2016</td>
+          </tr>
+        </table>
+      </td>
+      <td>HENNER ASSURANCE</td>
+      <td>Policy Processing Clerk</td>
+    </tr>
+
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td>APR 2015</td>
+            <td>-</td>
+            <td>JUN 2015</td>
+          </tr>
+        </table>
+      <td>BOLLORE LOGISTICS</td>
+      <td>Transport & Insurance Jurist</td>
+    </tr>
+
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td>JUL 2013</td>
+            <td>-</td>
+            <td>AUG 2013</td>
+          </tr>
+        </table>
+      <td>BNP PARIBAS</td>
+      <td>Debt Collector</td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+<hr>
+
+  <h3><strong><a href="Contact-me.html">Contact me</a></strong></h3>
+
+</body>
+
+</html>

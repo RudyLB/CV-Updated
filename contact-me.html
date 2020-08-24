@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact me</title>
+</head>
+
+<body>
+
+  <h1>Contacts</h1>
+
+  <hr>
+
+  <h2>My infos</h2>
+
+  <table cellspacing="5">
+    <tr>
+      <td><strong>Name:</strong></td>
+      <td>John Doe</td>
+    </tr>
+    <tr>
+      <td><strong>Email:</strong></td>
+      <td>John.doe@gmail.com</td>
+    </tr>
+    <tr>
+      <td><strong>Phone:</strong></td>
+      <td>+436778154896</td>
+    <tr>
+      <td><strong>Adress:</strong></td>
+      <td>MaximilianStrasse 50, 6020 Innsbruck</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h2>How to contact me</h2>
+
+  <form class="" action="mailto:info@JohnDoe@gmail.com" method="post" enctype="text/plain">
+  <!--Here, the "action" attribute incicate by default"index.html" which is basically Here
+  the main html file I have created. When the user will clic on "submit" (if I have indeed
+  created an input for that), the browser will send the user back to that main index.html page.
+  Here, for simplicity, I will simply change "index.html" by "mailto:" which will open the email program of
+  the user so he can reach out to me  -->
+    <label for="name">Name:</label>
+    <!--The "label" will be displayed on screen for the user, basically indicating the user
+    what is expected to be fill into the input box-->
+    <input type="text" name="name" value="Jane Doe">
+    <!-- The "name" attribute of the "input" element is used to reference elements in a javascript
+    or to reference form data after a form is submitted-->
+    <!--The value attribute defines the initial default value of the input field (that will be displayed on screen for the user )-->
+    <br>
+    <br>
+    <label for="email">Your Email:</label>
+    <input type="email" name="email" value="Jane.doe@gmail.com">
+    <br>
+    <br>
+    <label for="birthdate">Your birthdate:</label>
+    <input type="date" name="birthdate" value="">
+    <br>
+    <br>
+    <label for="phone number">Your phone number:</label>
+    <input type="tel" name="phone number" value="">
+    <br>
+    <br>
+    <label for="attach file">Attach file:</label>
+    <input type="file" name="attach file" value="">
+    <br>
+    <br>
+    <label for="interest range">Your degree of interest in my profile:</label>
+    <input type="range" name="interest range" min="0" max="10" value="5">
+    <!--I added myself the min/max/value. By default, the browser will show a bar set up to
+    a default value of 50% (middle of the bar)-->
+    <br>
+    <br>
+    <label for="checkbox newslaters">Do you wish to subscribe to the newsleters?</label>
+    <input type="checkbox" name="checkbox newslaters">
+    <br>
+    <br>
+    <label for="yourmessage">Your message:</label>
+    <br>
+    <textarea name="yourmessage" rows="7" cols="50"></textarea>
+    <br>
+    <!--For the "submit" we won't use a label so only the "Label Input" will be displayed-->
+    <input type="submit" name="submit" value="Submit">
+    <!--Here the "value" will allow us to enter a text in the "submit" button-->
+
+  </form>
+
+</body>
+
+</html>
